@@ -10,26 +10,53 @@
 
     <h1>FORTUNE SLOT</h1>
 
-    <body background="./images/casino-cards-background-with-sparkles-lights.avif">
+    <!-- <body background="./images/casino-cards-background-with-sparkles-lights.avif"> -->
 
-    <div class="slot-machine">
-        <div id="reel1"></div>
-        <div id="reel2"></div>
-        <div id="reel3"></div>
-        <div id="reel4"></div>
-        <div id="reel5"></div>
+    <div id="slot-machine">
+        <div class="slot-frame">
+            <ul id="slot-reel-1">
+                <li class="single-reel"><img src="./images/cherries.jpg"></li>
+                <li class="single-reel"><img src="./images/watermelon.jpg"></li>
+                <li class="single-reel"><img src="./images/orange.jpg"></li>
+            </ul>
+            <ul id="slot-reel-2">
+                <li class="single-reel"><img src="./images/cherries.jpg"></li>
+                <li class="single-reel"><img src="./images/watermelon.jpg"></li>
+                <li class="single-reel"><img src="./images/orange.jpg"></li>
+            </ul>
+            <ul id="slot-reel-3">
+                <li class="single-reel"><img src="./images/cherries.jpg"></li>
+                <li class="single-reel"><img src="./images/watermelon.jpg"></li>
+                <li class="single-reel"><img src="./images/orange.jpg"></li>
+            </ul>
+            <ul id="slot-reel-4">
+                <li class="single-reel"><img src="./images/cherries.jpg"></li>
+                <li class="single-reel"><img src="./images/watermelon.jpg"></li>
+                <li class="single-reel"><img src="./images/orange.jpg"></li>
+            </ul>
+            <ul id="slot-reel-5">
+                <li class="single-reel"><img src="./images/cherries.jpg"></li>
+                <li class="single-reel"><img src="./images/watermelon.jpg"></li>
+                <li class="single-reel"><img src="./images/orange.jpg"></li>
+            </ul>
+        </div>
     </div>
 
-
-
-    
-
+    <div id="scores">
+        <p>PLAYER 1 SCORE: <span id="score1">0</span></p>
+        <p>PLAYER 2 SCORE: <span id="score2">0</span></p>
+    </div>
+        
+    <div id="turn">
+        
+    </div>
 
     <div class="buttons">
         <button id="instructions">INSTRUCTIONS</button>
         <button id="restart">RESTART</button>
         <button id="spin">SPIN</button>
     </div>
+    <p id="instructions_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias suscipit atque cum deserunt voluptate minus maiores, tempora laborum quaerat nam itaque officiis provident error! Tempora, commodi pariatur! Dolor, esse a?</p>
 
     <script src="./app.js"></script>
 </body>
