@@ -12,6 +12,7 @@ function restart() {
     document.getElementById('spin').disabled = false;
     document.getElementById('score1').innerHTML = 0;
     document.getElementById('score2').innerHTML = 0;
+    document.getElementById('winner').innerHTML = '';
 }
 
 function init() {
@@ -28,11 +29,11 @@ function spin() {
     init();
     checkMatch();
     if(score1 >= 30) {
-        alert('Player 1 Wins');
+        document.getElementById('winner').innerHTML = 'PLAYER 1 WINS!';
         document.getElementById('spin').disabled = true;
     }
     if(score2 >= 30) {
-        alert('Player 2 Wins');
+        document.getElementById('winner').innerHTML = 'PLAYER 2 WINS!';
         document.getElementById('spin').disabled = true;
     }
 }
@@ -40,13 +41,7 @@ function spin() {
 function checkMatch() {
     let points = 0;
     const images = document.querySelectorAll('img');
-    if(images[0].src === images[3].src && images[3].src === images[6].src && images[6].src === images[9].src && images[9].src === images[12].src) {
-        points += 15;
-    }
-    else if((images[0].src === images[3].src && images[3].src === images[6].src && images[6].src === images[9].src) 
-    || (images[3].src === images[6].src && images[6].src === images[9].src && images[9].src === images[12].src)) {
-        
-    }
+    
     if(images[0].src === images[3].src && images[3].src === images[6].src) {
         points += 5;
     }
