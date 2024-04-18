@@ -4,7 +4,7 @@ let score1 = 0;
 let score2 = 0;
 let turn = 1;
 
-function restart() {
+function restart() {   //  function resets the game state, including scores and player turns to prepare for a new game round. 
     score1 = 0;
     score2 = 0;
     turn = 1;
@@ -15,7 +15,7 @@ function restart() {
     document.getElementById('winner').innerHTML = '';
 }
 
-function init() {
+function init() { // function initializes the slot machine by randomly selecting images for each reel and updating the display to indicate the current player's turn.
     const images = document.querySelectorAll('img');
     for (let i = 0; i < images.length; i++) {
         let index = Math.floor(Math.random() * imageNames.length);
