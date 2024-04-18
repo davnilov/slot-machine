@@ -7,7 +7,7 @@ body {
 
 h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 20px;
     font-family: monospace;
     font-weight: bold;
@@ -68,7 +68,7 @@ h1 {
     font-size: 3em;
     color: yellow;
     font-weight: bold;
-    margin-top: 60px;
+    margin-top: 40px;
 }
 
 /* ------------- buttons ------------- */
@@ -127,6 +127,7 @@ h1 {
     display: none;
     font-size: 25px;
     margin-left: 20px;
+    margin-top: -40px;
     text-align: center;
 }
 
